@@ -2,7 +2,7 @@
 numeroPar 0 = 0
 numeroPar n = if n `rem` 2 == 0 then n + numeroPar (n-1) else numeroPar (n-1)
 
-{- somaQuadrado: escreva uma função que recebe dois parâmetros (m e n) e retorna a seguinte série: 2^1*m + 2^2*m + 2^3*m + ... + 2^n*m.-}
+{-2 somaQuadrado: escreva uma função que recebe dois parâmetros (m e n) e retorna a seguinte série: 2^1*m + 2^2*m + 2^3*m + ... + 2^n*m.-}
 somaQuadrado _ 0 = 0
 somaQuadrado m n = m*2^n + somaQuadrado m (n-1)
 
