@@ -54,6 +54,7 @@ separar_menores v (x:xs) = if v >= x then x: separar_menores v (xs) else separar
 separar_maiores _ [] = []
 separar_maiores v (x:xs) = if v < x then x: separar_maiores v (xs) else separar_maiores v (xs)
 
+separar' n xs = ([y | y <- xs, y <= n],[y | y <- xs, y >= n])
 {-8. Implemente o Algoritmo de Euclides Estendido-}
 inverte (x,y,z) = (y,x,z)
 
